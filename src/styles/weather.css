@@ -1,0 +1,166 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  background-color: cadetblue;
+}
+header{
+  text-align: center;
+  background-color: slategray;
+  border-bottom: 10px solid navy;
+}
+
+h1{
+  font-size: 300%;
+  width: 100%;
+  
+}
+ul {
+  display: flex;
+  align-items: stretch; /* Default */
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  align-content: center;
+
+  /*new line*/
+  flex-wrap: wrap;
+}
+li {
+  display: block;
+  flex: 0 1 auto; /* Default */
+  list-style-type: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+li:hover{
+  color: lightskyblue;
+}
+.selected{
+  color:blue
+}
+.weather{
+  flex:2;
+}
+.today{
+  margin:20px;
+  margin-bottom: 0px;
+  padding: 10px;
+  padding-bottom: 0;
+  line-height: 1.5em;
+  border: 2px ridge grey;
+
+  /*new lines for box size*/
+  max-width: 600px;
+}
+.today-temp{
+  flex: 1;
+  display:inline-block;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction:row;
+  margin: 20px;
+  justify-content: center;
+}
+.nextblock{
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction:row;
+  margin: 20px;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  border: 1px ridge grey;
+}
+.comingDays{
+  display: inline-block;
+  flex-direction:row;
+  margin: 5px;
+  padding-left: 5px;
+  width: 125px;
+  height: 175px;
+  background-color:rgb(0, 255, 200);
+  border-radius: 10px;
+  line-height: 1.3em;
+  opacity:0.6;
+  font-size: 12px;
+  border: 1px ridge grey;
+  margin-bottom: 0;
+
+  /*new lines to test*/
+  width:100%;
+  max-width: fit-content;
+
+}
+.comingDays-def{
+  display: inline-block;
+  flex-direction:row;
+  margin: 5px;
+  padding-left: 5px;
+  width: 125px;
+  height: 175px;
+  background-color:blue;
+  border-radius: 10px;
+  color: white;
+  line-height: 1.3em;
+  opacity:0.6;
+  font-size: 12px;
+  border: 1px ridge grey;
+}
+.temperature:after{
+  /*content:" \2103";*/ /* for degree symbol and C*/
+  content:"\00B0";
+}
+p{
+  font-weight: bold;
+}
+ /* Tablets - header changes color */
+ @media screen and (max-width: 992px) {
+  h1{
+    font-size: 250%;
+  }
+} 
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+  body{
+    font-size: 14px;
+  } 
+  h1{
+    font-size: 200%;
+  }
+  li{
+    font-size:150%;
+  } 
+  .today{
+    margin:10px;
+    padding: 10px;
+  }
+}
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+  body{
+    font-size: 14px;
+  }
+  h1{
+    font-size: 150%;
+  } 
+  h2, h3{
+    font-size: 100%;
+  }
+  li{
+    font-size:100%;
+  } 
+  .container{
+    margin-left: 1px;
+    margin-right: 5px;
+  }
+  .today{
+    margin:5px;
+    padding: 5px;
+  }
+  header{
+    padding:5px;
+  }
+}
