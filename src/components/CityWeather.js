@@ -27,7 +27,7 @@ class CityWeather extends Component{
         })
         .catch(err => console.log(err));
        
-       //console.log("get data suspended : " + city);
+       this.setState({city:city});
        
     };
     searchDailyFC = (lat,lon) => {
@@ -55,7 +55,7 @@ class CityWeather extends Component{
                 {this.state.results.current ? (
                 
                   <div className="today">
-                        <h2>Today</h2>
+                        <h2 className='today-text'>Today</h2>
                         <div className='today-temp'>
                             <img 
                                 alt={this.state.results.current.weather[0].description}
@@ -63,7 +63,7 @@ class CityWeather extends Component{
                             />
                             <div>
                                 <h2 className='temperature'>{this.state.results.current.temp.toFixed(0)}</h2>
-                                <p title={this.state.results.current.weather[0].description}
+                                <p className='today-text' title={this.state.results.current.weather[0].description}
                                 >{this.state.results.current.weather[0].main}</p>
                             </div>
                         </div>

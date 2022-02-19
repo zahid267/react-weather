@@ -12,6 +12,7 @@ function DayWeather({ day }){
                 <h3 title={moment.unix(day.dt).format("MMMM D, YYYY")}>{moment.unix(day.dt).format("ddd")}</h3>
                 <img
                     alt={day.weather[0].description}
+                    title={day.weather[0].description}
                     src={`${REACT_APP_IMGURL}${day.weather[0].icon}.png`}
                 />
                 <p className='temperature'>{day.temp.day.toFixed(0)}</p>

@@ -2,7 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
-  background-color: cadetblue;
+  background-color: rgb(209, 224, 224);
 }
 header{
   text-align: center;
@@ -46,13 +46,12 @@ li:hover{
 .today{
   margin:20px;
   margin-bottom: 0px;
-  padding: 10px;
+  padding: 0;
   padding-bottom: 0;
   line-height: 1.5em;
-  border: 2px ridge grey;
-
-  /*new lines for box size*/
-  max-width: 600px;
+  border: 5px ridge whitesmoke;
+  align-content: center;
+  justify-content: center;
 }
 .today-temp{
   flex: 1;
@@ -63,51 +62,33 @@ li:hover{
   margin: 20px;
   justify-content: center;
 }
+.today-text{
+  font-size: 20px;
+}
 .nextblock{
   flex-wrap: wrap;
-  display: flex;
-  flex-direction:row;
-  margin: 20px;
+  display: flex; 
+  margin: 0;
   justify-content: center;
-  margin-top: 0;
-  margin-bottom: 0;
-
-  border: 1px ridge grey;
+  border: 5px ridge white;
 }
 .comingDays{
-  display: inline-block;
-  flex-direction:row;
-  margin: 5px;
-  padding-left: 5px;
+  display:inline-block;
+  margin: 0; 
   width: 125px;
-  height: 175px;
-  background-color:rgb(0, 255, 200);
-  border-radius: 10px;
+  height: 200px;
   line-height: 1.3em;
-  opacity:0.6;
-  font-size: 12px;
-  border: 1px ridge grey;
-  margin-bottom: 0;
-
-  /*new lines to test*/
-  width:100%;
-  max-width: fit-content;
-
+  font-size: 14px;
+  border: 1px ridge white;
+  flex: 1;
 }
-.comingDays-def{
-  display: inline-block;
-  flex-direction:row;
-  margin: 5px;
-  padding-left: 5px;
-  width: 125px;
-  height: 175px;
-  background-color:blue;
-  border-radius: 10px;
-  color: white;
-  line-height: 1.3em;
-  opacity:0.6;
-  font-size: 12px;
-  border: 1px ridge grey;
+.temperature{
+  font-size: 2em;
+  font-weight: bold;
+}
+.temperature h2{
+  font-size: 3em;
+  font-weight: bold;
 }
 .temperature:after{
   /*content:" \2103";*/ /* for degree symbol and C*/
@@ -116,7 +97,7 @@ li:hover{
 p{
   font-weight: bold;
 }
- /* Tablets - header changes color */
+ 
  @media screen and (max-width: 992px) {
   h1{
     font-size: 250%;
@@ -133,9 +114,9 @@ p{
   li{
     font-size:150%;
   } 
-  .today{
-    margin:10px;
-    padding: 10px;
+  .comingDays{
+    width: 100px;
+    height: 150px;
   }
 }
 /* Small smartphones - image placeholders change color */
@@ -157,10 +138,17 @@ p{
     margin-right: 5px;
   }
   .today{
-    margin:5px;
-    padding: 5px;
+    margin:2px;
+  }
+  .comingDays{
+    line-height: 0.9em;
+    width: 50px;
+    height: 150px;
   }
   header{
+    padding:5px;
+  }
+  main{
     padding:5px;
   }
 }
