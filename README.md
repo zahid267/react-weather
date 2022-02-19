@@ -34,7 +34,7 @@ The following image shows the web application's appearance and functionality:
 
 ## Review
 
-* The URL of the deployed application : https://zahid267.github.io/react-weather/
+* The URL of the deployed application : https://arcane-wave-46310.herokuapp.com/
 
 * The URL of the GitHub repository : https://github.com/zahid267/react-weather
 
