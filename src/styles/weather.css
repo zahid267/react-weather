@@ -11,7 +11,7 @@ header{
 }
 
 h1{
-  font-size: 300%;
+  font-size: 150%;
   width: 100%;
   
 }
@@ -31,7 +31,7 @@ li {
   display: block;
   flex: 0 1 auto; /* Default */
   list-style-type: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 li:hover{
@@ -100,7 +100,10 @@ p{
  
  @media screen and (max-width: 992px) {
   h1{
-    font-size: 250%;
+    font-size: 140%;
+  }
+  header{
+    padding:15px;
   }
 } 
 /* Large smartphones - navbar changes color */
@@ -109,7 +112,7 @@ p{
     font-size: 14px;
   } 
   h1{
-    font-size: 200%;
+    font-size: 125%;
   }
   li{
     font-size:150%;
@@ -118,6 +121,9 @@ p{
     width: 100px;
     height: 150px;
   }
+  header{
+    padding:10px;
+  }
 }
 /* Small smartphones - image placeholders change color */
 @media screen and (max-width: 576px) {
@@ -125,7 +131,7 @@ p{
     font-size: 14px;
   }
   h1{
-    font-size: 150%;
+    font-size: 100%;
   } 
   h2, h3{
     font-size: 100%;

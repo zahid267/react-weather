@@ -14,7 +14,7 @@ SO THAT he/she can plan a trip accordingly
 
 ```
 GIVEN a weather dashboard with three city names
-When the use opens the app, the weather for the first is presented
+When the use opens the app, the weather for the first city is presented
 WHEN a user click on a city
 THEN he/she is presented with the current and future conditions for that city
 WHEN he/she view current weather conditions for that city
@@ -30,7 +30,8 @@ THEN he/she is again presented with current and future conditions for that city
 
 The following image shows the web application's appearance and functionality:
 
-![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for Toronto.](./assets/Weather_Dashboard_demo.gif)
+![The weather app includes a search option, a list of cities, and a four-day forecast and current weather conditions for Ottawa.](./src/assets/React_Wather_App.webm
+)
 
 ## Review
 
