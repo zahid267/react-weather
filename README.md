@@ -30,7 +30,7 @@ THEN he/she is again presented with current and future conditions for that city
 
 The following image shows the web application's appearance and functionality:
 
-![The weather app includes a list of cities, a four-day forecast and current weather conditions for Ottawa.](./assets/React_Weather_App.webm)
+![The weather app includes a list of cities, a four-day forecast and current weather conditions for Ottawa.](./assets/React_Weather_App.gif)
 
 ## Review
 
